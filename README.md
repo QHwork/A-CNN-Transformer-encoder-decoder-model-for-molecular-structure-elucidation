@@ -71,19 +71,7 @@ by this packaging step. The builder's exact normalization is documented in
 README_build_dataset.md. The website's upload resampling and normalization are
 a separate browser inference path.
 
-## Downloads and website links
+## Website
 
-The website links are configured in `public/index.html` under `MODEL_RESOURCES`.
-`githubBase` currently uses `YOUR_GITHUB_USER/Website_model` and must be changed
-to the actual repository and branch. If this package is nested in another
-repository, include its `git_to_vercel/` path in the GitHub base URL.
-
-Google Drive URLs use explicit `PLACEHOLDER_...` file IDs. Replace them with
-publicly accessible Drive file IDs after uploading the dataset archive and the
-Base/UL PyTorch checkpoints. The archive should contain the three `.pt` dataset
-files, and can also include `original_data/` if redistribution is authorized.
-No datasets or training checkpoints are bundled in this repository package.
-
-The Python sources live outside `public/` and are linked through GitHub. They
-are not executed by Vercel. `source-manifest.json` records the original source
-paths and SHA-256 hashes alongside the packaged file hashes.
+The interactive QM9s IR-to-SMILES demo is available at
+[https://website-qm-9s-model.vercel.app](https://website-qm-9s-model.vercel.app).
