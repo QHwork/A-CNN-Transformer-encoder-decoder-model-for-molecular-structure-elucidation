@@ -75,3 +75,10 @@ a separate browser inference path.
 
 The interactive QM9s IR-to-SMILES demo is available at
 [https://website-qm-9s-model.vercel.app](https://website-qm-9s-model.vercel.app).
+
+## Related article
+
+The related article is available at
+[https://doi.org/10.21203/rs.3.rs-10731198/v1](https://doi.org/10.21203/rs.3.rs-10731198/v1).
+
+Qinghai Cui is the first author and sole corresponding author of this article.
