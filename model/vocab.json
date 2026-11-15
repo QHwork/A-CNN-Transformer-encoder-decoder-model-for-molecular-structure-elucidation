@@ -1,0 +1,147 @@
+{
+  "dataset": "QM9s",
+  "splits": [
+    "train",
+    "valid",
+    "test"
+  ],
+  "vocab_size": 16,
+  "pad_id": 0,
+  "bos_id": 1,
+  "eos_id": 2,
+  "token2id": {
+    "PAD": 0,
+    "BOS": 1,
+    "EOS": 2,
+    "C": 3,
+    "N": 4,
+    "O": 5,
+    "F": 6,
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 10,
+    "5": 11,
+    "=": 12,
+    "#": 13,
+    "(": 14,
+    ")": 15
+  },
+  "id2token": {
+    "0": "PAD",
+    "1": "BOS",
+    "2": "EOS",
+    "3": "C",
+    "4": "N",
+    "5": "O",
+    "6": "F",
+    "7": "1",
+    "8": "2",
+    "9": "3",
+    "10": "4",
+    "11": "5",
+    "12": "=",
+    "13": "#",
+    "14": "(",
+    "15": ")"
+  },
+  "tokens": [
+    "PAD",
+    "BOS",
+    "EOS",
+    "C",
+    "N",
+    "O",
+    "F",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "=",
+    "#",
+    "(",
+    ")"
+  ],
+  "normalization": {
+    "method": "0-100 Per-Spectrum Min-Max",
+    "formula": "y_min -> 0, y_max -> 100, (y / y_max) * 100",
+    "rule": "Values equal to minimum are set to 0. Values > minimum are scaled by 100 / max."
+  },
+  "sample_molecules": [
+    {
+      "name": "Ethanol (CCO)",
+      "smiles": "CCO",
+      "formula": "C2H6O",
+      "peaks": [
+        1050,
+        1380,
+        2970,
+        3650
+      ]
+    },
+    {
+      "name": "Acetonitrile (CC#N)",
+      "smiles": "CC#N",
+      "formula": "C2H3N",
+      "peaks": [
+        920,
+        1370,
+        1440,
+        2250,
+        2940
+      ]
+    },
+    {
+      "name": "Fluoromethane (CF)",
+      "smiles": "CF",
+      "formula": "CH3F",
+      "peaks": [
+        1048,
+        1182,
+        1467,
+        2964,
+        3006
+      ]
+    },
+    {
+      "name": "Formamide (NC=O)",
+      "smiles": "NC=O",
+      "formula": "CH3NO",
+      "peaks": [
+        1309,
+        1391,
+        1608,
+        1740,
+        2890,
+        3400
+      ]
+    },
+    {
+      "name": "Cyclopropane (C1CC1)",
+      "smiles": "C1CC1",
+      "formula": "C3H6",
+      "peaks": [
+        865,
+        1028,
+        1442,
+        3020,
+        3101
+      ]
+    },
+    {
+      "name": "Thiophene (c1ccsc1)",
+      "smiles": "c1ccsc1",
+      "formula": "C4H4S",
+      "peaks": [
+        700,
+        840,
+        1030,
+        1080,
+        1408,
+        1500,
+        3090
+      ]
+    }
+  ]
+}
